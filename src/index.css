@@ -73,7 +73,7 @@
 }
 
 
-/* Header */
+/* Home page */
 .headerBtn i{
   padding-left: 5px;
   transition: all .3s;
@@ -84,6 +84,12 @@
 
 .shadowing{
   box-shadow: 0 0 15px #8080809f;
+}
+
+.homeServicesWrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
 .serviceCard{transition: all .3s;} .serviceCard:hover{
@@ -123,7 +129,7 @@
 }
 
 
-/* Services */
+/* Services page */
 .services{
   background: url("/services.jpg") no-repeat;
   background-position: center;
@@ -210,14 +216,17 @@
 }
 
 @media (max-width:1000px) {
+  .homeServicesWrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
   .doctorsWrapper{
     grid-template-columns: repeat(2,1fr);
   }
 }
 
 @media (max-width:600px) {
-  .homeServiceCards{
-    width: 100%;
+  .homeServicesWrapper{
+    grid-template-columns: repeat(1,1fr);
   }
   .doctorsWrapper{
     grid-template-columns: repeat(1,1fr);

@@ -7,10 +7,14 @@ const Home = () => {
     Aos.init()
   return (
     <div>
-      <div className="container w-10/12 mx-auto pt-14">
+      <div className="container w-10/12 max-[600px]:w-full max-[600px]:px-6 mx-auto pt-14">
         {/* Showcase */}
         <header className="flex items-center showcaseHeader">
-          <section className="w-1/2 showcaseText" data-aos="fade-right" data-aos-duration="1500">
+          <section
+            className="w-1/2 showcaseText"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <h1 className="text-6xl font-semibold">
               <span className="text-blue-500 text-7xl">We care</span>
               <br />
@@ -26,7 +30,11 @@ const Home = () => {
               </button>
             </Link>
           </section>
-          <section className="w-1/2 showcaseImg" data-aos="fade-left" data-aos-duration="1500">
+          <section
+            className="w-1/2 showcaseImg"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <div className="relative grid place-items-center">
               <img
                 className="w-10/12 z-10 p-3 aspect-square rounded-full object-cover"
@@ -36,7 +44,12 @@ const Home = () => {
               <div className="w-9/12 bg-blue-500 aspect-square rounded-full shadow-2xl absolute bottom-[-45px] border-[28px] grid box-content">
                 <span className="border-[28px] border-white rounded-full"></span>
               </div>
-              <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" className="absolute left-0 top-10 rounded-full bg-white bg-opacity-70 backdrop-blur-sm border border-gray-300 shadowing p-3 px-5 flex items-center gap-3 cardBounce hover:animate-none ">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                className="absolute left-0 top-10 rounded-full bg-white bg-opacity-70 backdrop-blur-sm border border-gray-300 shadowing p-3 px-5 flex items-center gap-3 cardBounce hover:animate-none "
+              >
                 <i className="fa-solid fa-search  text-4xl text-blue-500"></i>
                 <span className="opacity-70">
                   <p className="text-lg font-semibold ">
@@ -45,14 +58,22 @@ const Home = () => {
                   <p>Treat with care</p>
                 </span>
               </div>
-              <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" className="absolute left-10 z-20 rounded-full bg-white bg-opacity-70 backdrop-blur-sm border border-gray-300 shadowing p-3 px-5 flex items-center gap-3 cardBounce hover:animate-none ">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="700"
+                className="absolute left-10 z-20 rounded-full bg-white bg-opacity-70 backdrop-blur-sm border border-gray-300 shadowing p-3 px-5 flex items-center gap-3 cardBounce hover:animate-none "
+              >
                 <i className="fa-solid fa-clipboard-list  text-4xl text-blue-500"></i>
                 <span className="opacity-70">
                   <p className="text-lg font-semibold ">Book an appointment</p>
                   <p>Online appointment</p>
                 </span>
               </div>
-              <a data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000"
+              <a
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
                 href="tel:+998912345678"
                 className="absolute right-10 top-44 z-20 rounded-full bg-white bg-opacity-70 backdrop-blur-sm border border-gray-300 shadowing p-3 px-5 flex items-center gap-3 cardBounce hover:animate-none "
               >
@@ -73,20 +94,39 @@ const Home = () => {
           <p className="text-center opacity-70 py-3">
             We are dedicated to serve you best medical services
           </p>
-          <div className="flex items-center justify-evenly flex-wrap pt-10 gap-5">
-            <Link to="/services#lab" data-aos="fade-right" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+          <div className="homeServicesWrapper pt-10">
+            <Link
+              to="/services"
+              data-aos="fade-right"
+              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+            >
               <i className="text-8xl fa-solid fa-flask-vial"></i>
               <p className="pt-5">Well equipped lab</p>
             </Link>
-            <Link to="/services#diagnostics" data-aos="fade-right" data-aos-delay="200" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+            <Link
+              to="/services"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+            >
               <i className="text-8xl fa-solid fa-truck-medical"></i>
               <p className="pt-5">Emergancy ambulance</p>
             </Link>
-            <Link to="/contact" data-aos="fade-right" data-aos-delay="400" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+            <Link
+              to="/contact"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+            >
               <i className="text-8xl fa-solid fa-user-doctor"></i>
               <p className="pt-5">Appointments</p>
             </Link>
-            <Link to="/contact" data-aos="fade-right" data-aos-delay="600" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+            <Link
+              to="/contact"
+              data-aos="fade-right"
+              data-aos-delay="600"
+              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+            >
               <i className="text-8xl fa-solid fa-headset"></i>
               <p className="pt-5">Call center</p>
             </Link>
@@ -101,7 +141,11 @@ const Home = () => {
             Well qualified doctors are ready to serve you
           </p>
           <div className="doctorsWrapper py-10">
-            <div data-aos="fade-down-right" data-aos-offset="200" className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4">
+            <div
+              data-aos="fade-down-right"
+              data-aos-offset="200"
+              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
+            >
               <img
                 className="rounded-lg"
                 src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
@@ -120,7 +164,11 @@ const Home = () => {
               </span>
               <Button variant="contained">Book an appointment</Button>
             </div>
-            <div data-aos="fade-down-left" data-aos-offset="200" className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4">
+            <div
+              data-aos="fade-down-left"
+              data-aos-offset="200"
+              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
+            >
               <img
                 className="rounded-lg"
                 src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
@@ -139,7 +187,11 @@ const Home = () => {
               </span>
               <Button variant="contained">Book an appointment</Button>
             </div>
-            <div data-aos="fade-up-right" data-aos-offset="200" className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4">
+            <div
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
+            >
               <img
                 className="rounded-lg"
                 src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
@@ -158,7 +210,11 @@ const Home = () => {
               </span>
               <Button variant="contained">Book an appointment</Button>
             </div>
-            <div data-aos="fade-up-left" data-aos-offset="200" className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4">
+            <div
+              data-aos="fade-up-left"
+              data-aos-offset="200"
+              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
+            >
               <img
                 className="rounded-lg"
                 src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
