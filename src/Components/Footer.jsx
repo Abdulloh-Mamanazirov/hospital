@@ -49,11 +49,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/3 footerWidth">
+        <div className="w-1/3 footerWidth max-[600px]:w-full max-[600px]:mt-5">
           <h2 className="contactsHeading text-xl font-[700] pb-3">
             {t("Nav_Contact_Link")}
           </h2>
-          <ul className="footerContacts flex flex-col gap-1">
+          <ul className="footerContacts flex flex-wrap flex-col max-[600px]:flex-row max-[600px]:gap-x-5 gap-1">
             <li>
               <a
                 className="opacity-75 hover:opacity-100 hover:underline"
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container w-11/12 mx-auto py-4">
-        <span className="w-3/6 footerWidth flex flex-wrap items-center justify-between text-lg">
+        <span className="w-3/6 max-[600px]:w-full footerWidth flex flex-wrap items-center justify-between text-lg">
           <Link className="opacity-75 hover:opacity-100" to="/">
             {t("Nav_Home_Link")}
           </Link>
