@@ -43,7 +43,7 @@ const Contact = () => {
       </section>
       <div className="container w-11/12 mx-auto py-12 ">
         <div className="flex flex-wrap items-center justify-around gap-5">
-          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2 gap-2">
+          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 max-[450px]:justify-between max-[450px]:gap-0 flex items-center p-6 rounded-xl bg-gray-50 border-2 gap-2">
             <span>
               <img src="/icons/phone.png" width={70} alt="icon" />
             </span>
@@ -57,7 +57,7 @@ const Contact = () => {
               <p>Call Today</p>
             </span>
           </div>
-          <div className="max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2 gap-2">
+          <div className="max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center max-[450px]:justify-between max-[450px]:gap-0 p-6 rounded-xl bg-gray-50 border-2 gap-2">
             <span>
               <img src="/icons/mail.png" width={70} alt="icon" />
             </span>
@@ -71,7 +71,7 @@ const Contact = () => {
               <p>Feel Free To Mail Us</p>
             </span>
           </div>
-          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2 gap-2">
+          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center max-[450px]:justify-between max-[450px]:gap-0 p-6 rounded-xl bg-gray-50 border-2 gap-2">
             <span>
               <img src="/icons/location.png" width={60} alt="icon" />
             </span>
@@ -86,11 +86,15 @@ const Contact = () => {
             </span>
           </div>
         </div>
-        <h2 className="text-center font-sans text-lg mt-14">You can book an appointment with our doctors online or ask a question directly from specialists by filling out one of the forms below.</h2>
+        <h2 className="text-center font-sans text-lg mt-14">
+          You can book an appointment with our doctors online or ask a question
+          directly from specialists by filling out one of the forms below.
+        </h2>
         <div className="flex flex-wrap justify-around mt-10 gap-5">
-
           {/* Appointment form */}
-          <Form id="appForm" className="md:w-5/12 shadowing bg-gray-50 border border-gray-400 p-3 rounded-xl"
+          <Form
+            id="appForm"
+            className="md:w-5/12 shadowing bg-gray-50 border border-gray-400 p-3 rounded-xl"
             name="nest-messages"
             onFinish={onFinishAppointment}
             validateMessages={validateMessages}
@@ -157,7 +161,8 @@ const Contact = () => {
           </Form>
 
           {/* Question form */}
-          <Form className="md:w-5/12 shadowing bg-gray-50  rounded-xl border border-gray-400 p-3"
+          <Form
+            className="md:w-5/12 shadowing bg-gray-50  rounded-xl border border-gray-400 p-3"
             name="nest-messages"
             onFinish={onFinishQuestion}
             validateMessages={validateMessages}
@@ -207,7 +212,7 @@ const Contact = () => {
               rules={[{ required: true }]}
               initialValue=""
             >
-              <Input.TextArea rows={4}/>
+              <Input.TextArea rows={4} />
             </Form.Item>
             <Form.Item>
               <Button
