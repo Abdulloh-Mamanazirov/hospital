@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  background: rgb(239, 238, 238);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 174, 255);
+  border-radius: 10px;
+}
+
+* {
+  /* user-select: none; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.posUnset{
+  position: unset !important;
+}
+
+.navbg {
+  opacity: 0.97;
+  background: radial-gradient(at 18% 99%, rgb(2, 183, 255) 0px, transparent 50%)
+      repeat scroll 0% 0%,
+    radial-gradient(at 97% 8%, rgb(12, 138, 217) 0px, transparent 50%) repeat scroll
+      0% 0%,
+    radial-gradient(at 79% 82%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
+      0% 0%,
+    radial-gradient(at 96% 10%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
+      0% 0%,
+    radial-gradient(at 42% 20%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 4% 49%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
+      0% 0%,
+    rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(255, 255, 255) 0px, #ffffff 50%)
+      repeat scroll 0% 0%;
+  background: white !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.homebg {
+  height: 100%;
+  background: #000;
+  background: radial-gradient(at 18% 99%, rgb(121, 188, 226) 0px, transparent 50%)
+      repeat scroll 0% 0%,
+    radial-gradient(at 97% 8%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
+      0% 0%,
+    radial-gradient(at 79% 82%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
+      0% 0%,
+    radial-gradient(at 96% 10%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 42% 20%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 4% 49%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
+      0% 0%,
+    rgba(0, 0, 0, 0)
+      radial-gradient(at 57% 33%, rgb(255, 255, 255) 0px, #ffffff 50%) repeat
+      scroll 0% 0%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+
+/* Navbar */
+.navLinkBtn{
+  text-transform: capitalize !important;
+}
+.ant-dropdown {
+  top: 75px !important;
+}
+
+
+/* Header */
+.headerBtn i{
+  padding-left: 5px;
+  transition: all .3s;
+}
+.headerBtn:hover  i{
+  padding-left: 20px;
+}
+
+.shadowing{
+  box-shadow: 0 0 15px #8080809f;
+}
+
+.serviceCard{transition: all .3s;} .serviceCard:hover{
+  background: #3b82f6;
+  color: white;
+  box-shadow: 0 0 15px #888;
+  
+  animation: cardBounce .5s linear infinite alternate both;
+}
+.cardBounce{
+  animation: cardBounce .6s linear infinite alternate both;
+}
+@keyframes cardBounce {
+  to{
+    transform: scale(1.03);
+  }
+}
+@keyframes updown {
+  to{
+    transform: translateY(10px);
+  }
+}
+
+
+.doctorsWrapper{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(2,30%);
+  gap: 50px;
+}
+
+.diagnostics{
+  background: url("/artem.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: right;
+}
+
+
+/* Services */
+.services{
+  background: url("/services.jpg") no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  background-size: cover;
+  width: 100%;
+}
+
+.ant-anchor-link{
+  font-size: 20px !important;
+}
+
+.servicesScroll::-webkit-scrollbar-thumb,::-webkit-scrollbar{
+  display: none;
+}
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-col-18{
+  max-width: unset;
+}
+
+@media (max-width:1000px) {
+  .servicesScroll{
+    /* display: unset !important; */
+    flex-direction: column-reverse !important;
+    position: unset !important;
+    /* flex-flow: column !important; */
+  }
+  :where(.css-dev-only-do-not-override-1vtf12y).ant-col-5{
+    display: unset !important;
+    max-width: unset !important;
+    min-height: unset !important;
+    flex:unset;
+  }
+  .css-dev-only-do-not-override-1vtf12y {
+    position:unset !important;
+    height: unset !important;
+    width: unset !important;
+  }
+}
+
+/* Doctors */
+.doctors{
+  background: url("/doctors.jpg") no-repeat center / contain;
+}
+
+/* About */
+.about{
+  background: url("https://www.gannett-cdn.com/presto/2021/09/13/NCOD/aacc9c8a-e5b2-454d-b96a-71ae89181d38-PMH_Rendering_1.jpg") no-repeat center / cover;
+}
+.aboutUl li:nth-child(odd){
+  margin-bottom: 10px;
+}
+.aboutUl li:nth-child(even){
+  margin-bottom: 10px;
+}
+.ant-tabs-tab-btn{
+  font-size: 19px;
+}
+
+/* Contact */
+.contact{
+  background: url("/contact.webp") no-repeat right / contain;
+}
+@media (max-width:1000px) {
+  .ant-input, .ant-input-number, .ant-input-number-input-wrap,
+  .ant-input-group-wrapper, .ant-input-wrapper, .ant-select{
+    width: 100% !important;
+  }
+}
+
+/***************** Responsive *****************/
+@media (max-width:1200px) {
+  .showcaseHeader{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .showcaseHeader section.showcaseText{
+    width: 100%;
+  }
+  .showcaseImg{
+    display: none;
+  }
+
+}
+
+@media (max-width:1000px) {
+  .doctorsWrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width:600px) {
+  .homeServiceCards{
+    width: 100%;
+  }
+  .doctorsWrapper{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .doctorCard:nth-child(3), .doctorCard:nth-child(4){
+    display: none;
+  }
+  .doctorsSeeMoreBtn{
+    width: 100%;
+  }
+
+  /* Services */
+  .anchors{
+    margin-top: 0;
+  }
+}
