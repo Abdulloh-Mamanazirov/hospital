@@ -74,22 +74,22 @@ const Home = () => {
             We are dedicated to serve you best medical services
           </p>
           <div className="flex items-center justify-evenly flex-wrap pt-10 gap-5">
-            <div data-aos="fade-right" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+            <Link to="/services#lab" data-aos="fade-right" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
               <i className="text-8xl fa-solid fa-flask-vial"></i>
               <p className="pt-5">Well equipped lab</p>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="200" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+            </Link>
+            <Link to="/services#diagnostics" data-aos="fade-right" data-aos-delay="200" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
               <i className="text-8xl fa-solid fa-truck-medical"></i>
               <p className="pt-5">Emergancy ambulance</p>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="400" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+            </Link>
+            <Link to="/contact" data-aos="fade-right" data-aos-delay="400" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
               <i className="text-8xl fa-solid fa-user-doctor"></i>
               <p className="pt-5">Appointments</p>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="600" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
+            </Link>
+            <Link to="/contact" data-aos="fade-right" data-aos-delay="600" className="homeServiceCards min-w-[23%] bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard">
               <i className="text-8xl fa-solid fa-headset"></i>
               <p className="pt-5">Call center</p>
-            </div>
+            </Link>
           </div>
         </section>
         {/* Doctors */}
