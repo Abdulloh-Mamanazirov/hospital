@@ -69,7 +69,15 @@
   text-transform: capitalize !important;
 }
 .ant-dropdown {
+  position: fixed !important;
   top: 75px !important;
+}
+@media (max-width:1000px) {
+  .ant-dropdown-menu, .ant-dropdown-menu-root, .ant-dropdown-menu-vertical, .ant-dropdown-menu-light, :where(.css-dev-only-do-not-override-1vtf12y).ant-dropdown .ant-dropdown-menu, :where(.css-dev-only-do-not-override-1vtf12y).ant-dropdown-menu-submenu .ant-dropdown-menu{
+    position: fixed !important;
+    right: 10px;
+    top: 60px;
+  }
 }
 
 
@@ -93,7 +101,7 @@
 }
 
 .serviceCard{transition: all .3s;} .serviceCard:hover{
-  background: #3b82f6;
+  background: #008cff;
   color: white;
   box-shadow: 0 0 15px #888;
   

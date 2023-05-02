@@ -43,9 +43,9 @@ const Contact = () => {
       </section>
       <div className="container w-11/12 mx-auto py-12 ">
         <div className="flex flex-wrap items-center justify-around gap-5">
-          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2">
+          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2 gap-2">
             <span>
-              <i className="fa-solid fa-phone text-4xl pr-4"></i>
+              <img src="/icons/phone.png" width={70} alt="icon" />
             </span>
             <span>
               <a
@@ -57,9 +57,9 @@ const Contact = () => {
               <p>Call Today</p>
             </span>
           </div>
-          <div className="max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2">
+          <div className="max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2 gap-2">
             <span>
-              <i className="fa-solid fa-envelope text-4xl pr-4"></i>
+              <img src="/icons/mail.png" width={70} alt="icon" />
             </span>
             <span>
               <a
@@ -71,9 +71,9 @@ const Contact = () => {
               <p>Feel Free To Mail Us</p>
             </span>
           </div>
-          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2">
+          <div className="lg:w-3/12 max-[700px]:w-full max-[700px]:justify-center max-[700px]:gap-5 flex items-center p-6 rounded-xl bg-gray-50 border-2 gap-2">
             <span>
-              <i className="fa-solid fa-location-dot text-4xl pr-4"></i>
+              <img src="/icons/location.png" width={60} alt="icon" />
             </span>
             <span>
               <a

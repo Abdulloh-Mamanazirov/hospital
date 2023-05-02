@@ -98,36 +98,36 @@ const Home = () => {
             <Link
               to="/services"
               data-aos="fade-right"
-              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+              className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <i className="text-8xl fa-solid fa-flask-vial"></i>
+              <img className="mx-auto w-36" src="/icons/microscope.png" alt="icon" />
               <p className="pt-5">Well equipped lab</p>
             </Link>
             <Link
               to="/services"
               data-aos="fade-right"
               data-aos-delay="200"
-              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+              className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <i className="text-8xl fa-solid fa-truck-medical"></i>
+              <img className="mx-auto w-36" src="/icons/ambulance.png" alt="icon" />
               <p className="pt-5">Emergancy ambulance</p>
             </Link>
             <Link
               to="/contact"
               data-aos="fade-right"
               data-aos-delay="400"
-              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+              className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <i className="text-8xl fa-solid fa-user-doctor"></i>
+              <img className="mx-auto w-36" src="/icons/meeting.png" alt="icon" />
               <p className="pt-5">Appointments</p>
             </Link>
             <Link
               to="/contact"
               data-aos="fade-right"
               data-aos-delay="600"
-              className=" bg-white p-12 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
+              className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <i className="text-8xl fa-solid fa-headset"></i>
+              <img className="mx-auto w-36" src="/icons/headset.png" alt="icon" />
               <p className="pt-5">Call center</p>
             </Link>
           </div>
