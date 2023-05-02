@@ -124,7 +124,7 @@
 
 .diagnostics{
   background: url("/artem.jpg") no-repeat fixed;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: right;
 }
 

@@ -142,7 +142,7 @@ const Home = () => {
           </p>
           <div className="doctorsWrapper py-10">
             <div
-              data-aos="fade-down-right"
+              data-aos="zoom-in"
               data-aos-offset="200"
               className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
             >
@@ -165,7 +165,7 @@ const Home = () => {
               <Button variant="contained">Book an appointment</Button>
             </div>
             <div
-              data-aos="fade-down-left"
+              data-aos="zoom-in"
               data-aos-offset="200"
               className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
             >
@@ -188,7 +188,7 @@ const Home = () => {
               <Button variant="contained">Book an appointment</Button>
             </div>
             <div
-              data-aos="fade-up-right"
+              data-aos="zoom-in"
               data-aos-offset="200"
               className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
             >
@@ -211,7 +211,7 @@ const Home = () => {
               <Button variant="contained">Book an appointment</Button>
             </div>
             <div
-              data-aos="fade-up-left"
+              data-aos="zoom-in"
               data-aos-offset="200"
               className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
             >
