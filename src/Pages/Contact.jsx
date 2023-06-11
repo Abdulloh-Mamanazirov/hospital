@@ -94,7 +94,7 @@ const Contact = () => {
           {/* Appointment form */}
           <Form
             id="appForm"
-            className="md:w-5/12 shadowing bg-gray-50 border border-gray-400 p-3 rounded-xl"
+            className="md:w-5/12 transition-all hover:shadow-2xl hover:bg-gray-50 border  p-3 rounded-xl"
             name="nest-messages"
             onFinish={onFinishAppointment}
             validateMessages={validateMessages}
@@ -149,25 +149,25 @@ const Contact = () => {
                 <Option value="fine">fine</Option>
               </Select>
             </Form.Item>
-            <Form.Item>
+            <Form.Item className=" flex justify-end">
               <Button
                 type="primary"
-                className="bg-sky-500 w-1/3"
+                className="bg-sky-500 w-44"
                 htmlType="submit"
               >
                 Submit
               </Button>
             </Form.Item>
           </Form>
-
+              
           {/* Question form */}
           <Form
-            className="md:w-5/12 shadowing bg-gray-50  rounded-xl border border-gray-400 p-3"
+            className="md:w-5/12 transition-all hover:shadow-2xl hover:bg-gray-50  rounded-xl border  p-3"
             name="nest-messages"
             onFinish={onFinishQuestion}
             validateMessages={validateMessages}
           >
-            <h2 className="text-center text-blue-400 font-semibold font-mono text-4xl pb-4">
+            <h2 className="text-center text-blue-400 font-semibold font-sans text-4xl pb-4">
               Ask a Question
             </h2>
             <Form.Item
@@ -214,10 +214,10 @@ const Contact = () => {
             >
               <Input.TextArea rows={4} />
             </Form.Item>
-            <Form.Item>
+            <Form.Item className="flex justify-end">
               <Button
                 type="primary"
-                className="bg-sky-500 w-1/3"
+                className="bg-sky-500 w-44"
                 htmlType="submit"
               >
                 Submit
