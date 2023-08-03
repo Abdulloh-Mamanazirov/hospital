@@ -1,6 +1,5 @@
-import React from "react";
 import { Anchor, Col, Row } from "antd";
-import Navbar from "../Components/Navbar";
+import {Navbar} from "../Components";
 
 const Services = () => {
   return (

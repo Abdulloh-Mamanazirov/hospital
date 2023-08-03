@@ -1,16 +1,11 @@
-import React from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
-import Footer from './Components/Footer'
-import Navbar from './Components/Navbar'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import Doctors from './Pages/Doctors'
-import Home from './Pages/Home'
-import Services from './Pages/Services'
+import React from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { Footer, Navbar } from "./Components";
+import { Home, About, Contact, Doctors, Services } from "./Pages";
 
 const App = () => {
-  let location = useLocation()
-  console.log(location);
+  let location = useLocation();
+
   return (
     <>
       {location.pathname !== "/services" && <Navbar />}
@@ -24,6 +19,6 @@ const App = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default App
+export default App;
