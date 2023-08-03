@@ -1,13 +1,14 @@
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Footer, Navbar } from "./Components";
-import { Home, About, Contact, Doctors, Services } from "./Pages";
+import { Loading, Home, About, Contact, Doctors, Services } from "./Pages";
 
 const App = () => {
   let location = useLocation();
 
   return (
     <>
+      <Loading />
       {location.pathname !== "/services" && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
