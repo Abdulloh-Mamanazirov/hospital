@@ -37,7 +37,7 @@ const Home = () => {
           >
             <div className="relative grid place-items-center">
               <img
-                className="w-10/12 z-10 p-3 aspect-square rounded-full object-cover"
+                className="showcase-image w-10/12 z-10 p-3 aspect-square rounded-full object-cover"
                 src="./showcase.png"
                 alt="showcase"
               />
