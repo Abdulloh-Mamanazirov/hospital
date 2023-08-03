@@ -132,8 +132,12 @@
 
 .diagnostics{
   background: url("/artem.jpg") no-repeat fixed;
-  /* background-size: cover; */
   background-position: right;
+}
+@media (max-width:1400px) {
+  .diagnostics{
+    background-size: cover;
+  }
 }
 
 
