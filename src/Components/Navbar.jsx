@@ -194,7 +194,7 @@ function Navbar(props) {
                 {t("Nav_Contact_Link")}
               </Link>
             </Button>
-            <Button
+            {/* <Button
               className="navLinkBtn "
               sx={{ color: "#000", fontSize: "19px", marginRight: "7px" }}
             >
@@ -208,7 +208,7 @@ function Navbar(props) {
               >
                 {t("Nav_Articles_Link")}
               </Link>
-            </Button>
+            </Button> */}
           </Box>
           <Dropdown
             menu={{ items }}

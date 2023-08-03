@@ -98,9 +98,9 @@ const Footer = () => {
           <Link className="opacity-75 hover:opacity-100" to="/contact">
             {t("Nav_Contact_Link")}
           </Link>
-          <Link className="opacity-75 hover:opacity-100" to="/articles">
+          {/* <Link className="opacity-75 hover:opacity-100" to="/articles">
             {t("Nav_Articles_Link")}
-          </Link>
+          </Link> */}
         </span>
       </div>
     </div>
