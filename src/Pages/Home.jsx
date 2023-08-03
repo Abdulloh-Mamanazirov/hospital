@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import Aos from "aos";
+import { HomeDoctorCard } from '../Components'
 
 const Home = () => {
     Aos.init()
@@ -99,7 +100,11 @@ const Home = () => {
               data-aos="fade-right"
               className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <img className="mx-auto w-36" src="/icons/microscope.png" alt="icon" />
+              <img
+                className="mx-auto w-36"
+                src="/icons/microscope.png"
+                alt="icon"
+              />
               <p className="pt-5">Well equipped lab</p>
             </Link>
             <Link
@@ -108,7 +113,11 @@ const Home = () => {
               data-aos-delay="200"
               className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <img className="mx-auto w-36" src="/icons/ambulance.png" alt="icon" />
+              <img
+                className="mx-auto w-36"
+                src="/icons/ambulance.png"
+                alt="icon"
+              />
               <p className="pt-5">Emergancy ambulance</p>
             </Link>
             <Link
@@ -117,7 +126,11 @@ const Home = () => {
               data-aos-delay="400"
               className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <img className="mx-auto w-36" src="/icons/meeting.png" alt="icon" />
+              <img
+                className="mx-auto w-36"
+                src="/icons/meeting.png"
+                alt="icon"
+              />
               <p className="pt-5">Appointments</p>
             </Link>
             <Link
@@ -126,7 +139,11 @@ const Home = () => {
               data-aos-delay="600"
               className=" bg-white p-5 border border-gray-200 rounded-2xl shadow-2xl text-center serviceCard"
             >
-              <img className="mx-auto w-36" src="/icons/headset.png" alt="icon" />
+              <img
+                className="mx-auto w-36"
+                src="/icons/headset.png"
+                alt="icon"
+              />
               <p className="pt-5">Call center</p>
             </Link>
           </div>
@@ -140,98 +157,16 @@ const Home = () => {
             Well qualified doctors are ready to serve you
           </p>
           <div className="doctorsWrapper py-10">
-            <div
-              data-aos="zoom-in"
-              data-aos-offset="200"
-              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
-            >
-              <img
-                className="rounded-lg"
-                src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
-                alt="doctor"
+            {new Array(4).fill(null).map(() => (
+              <HomeDoctorCard
+                image={
+                  "https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
+                }
+                name={"Dr. Terry Henry"}
+                field={"Cardiologist"}
+                experience={Math.floor(Math.random()*10)+2}
               />
-              <span className="text-center">
-                <h3 className="text-3xl font-medium">Dr. Terry Henry</h3>
-                <p className="text-lg opacity-80">Cardiologist</p>
-              </span>
-              <span className="flex items-center justify-center gap-2">
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star-half-stroke text-blue-500"></i>
-              </span>
-              <Button variant="contained">Book an appointment</Button>
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-offset="200"
-              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
-            >
-              <img
-                className="rounded-lg"
-                src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
-                alt="doctor"
-              />
-              <span className="text-center">
-                <h3 className="text-3xl font-medium">Dr. Terry Henry</h3>
-                <p className="text-lg opacity-80">Cardiologist</p>
-              </span>
-              <span className="flex items-center justify-center gap-2">
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star-half-stroke text-blue-500"></i>
-              </span>
-              <Button variant="contained">Book an appointment</Button>
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-offset="200"
-              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
-            >
-              <img
-                className="rounded-lg"
-                src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
-                alt="doctor"
-              />
-              <span className="text-center">
-                <h3 className="text-3xl font-medium">Dr. Terry Henry</h3>
-                <p className="text-lg opacity-80">Cardiologist</p>
-              </span>
-              <span className="flex items-center justify-center gap-2">
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star-half-stroke text-blue-500"></i>
-              </span>
-              <Button variant="contained">Book an appointment</Button>
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-offset="200"
-              className="doctorCard p-5 bg-white rounded-xl shadowing flex flex-col gap-4"
-            >
-              <img
-                className="rounded-lg"
-                src="https://media.istockphoto.com/id/1224749418/photo/concentrated-young-female-physician-working-on-computer-doing-online-research.jpg?s=612x612&w=0&k=20&c=j2PP2ktQGsJTLLDBt8HHLk8Eg4rywc0QaJ7f7OIWA7E="
-                alt="doctor"
-              />
-              <span className="text-center">
-                <h3 className="text-3xl font-medium">Dr. Terry Henry</h3>
-                <p className="text-lg opacity-80">Cardiologist</p>
-              </span>
-              <span className="flex items-center justify-center gap-2">
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star text-blue-500"></i>
-                <i className="fa-solid fa-star-half-stroke text-blue-500"></i>
-              </span>
-              <Button variant="contained">Book an appointment</Button>
-            </div>
+            ))}
           </div>
           <div className="text-center">
             <Link to="/doctors">
