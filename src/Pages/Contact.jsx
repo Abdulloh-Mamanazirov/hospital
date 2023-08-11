@@ -34,7 +34,7 @@ const Contact = () => {
     <div>
       <section className="contact">
         <div className="bg-gradient-to-r from-blue-300 to-transparent p-6 md:py-28 lg:pl-52">
-          <h2 className="text-6xl font-semibold">Contact us</h2>
+          <h2 className="page-title text-6xl font-semibold">Contact us</h2>
           <p className="my-3 mb-4 ">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
             vero.
@@ -159,7 +159,7 @@ const Contact = () => {
               </Button>
             </Form.Item>
           </Form>
-              
+
           {/* Question form */}
           <Form
             className="md:w-5/12 transition-all hover:shadow-2xl hover:bg-gray-50  rounded-xl border  p-3"

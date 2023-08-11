@@ -8,7 +8,7 @@ const About = () => {
     <div>
       <section className="about">
         <div className="bg-gradient-to-r from-blue-300 to-transparent p-6 md:py-28 lg:pl-52">
-          <h2 className="text-6xl font-semibold">{title}</h2>
+          <h2 className="page-title text-6xl font-semibold">{title}</h2>
           <p className="my-3 mb-4 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
             impedit ipsa incidunt.
