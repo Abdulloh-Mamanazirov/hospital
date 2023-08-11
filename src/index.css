@@ -220,6 +220,11 @@
 .contact{
   background: url("/contact.webp") no-repeat right / contain;
 }
+@media (max-width:440px) {
+  .contact{
+    background-size: cover;
+  }
+}
 @media (max-width:1000px) {
   .ant-input, .ant-input-number, .ant-input-number-input-wrap,
   .ant-input-group-wrapper, .ant-input-wrapper, .ant-select{
