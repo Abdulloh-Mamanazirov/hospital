@@ -13,10 +13,13 @@
 
 * {
   /* user-select: none; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+main.MuiBox-root {
+  display: none;
 }
 
-.posUnset{
+.posUnset {
   position: unset !important;
 }
 
@@ -24,18 +27,19 @@
   opacity: 0.97;
   background: radial-gradient(at 18% 99%, rgb(2, 183, 255) 0px, transparent 50%)
       repeat scroll 0% 0%,
-    radial-gradient(at 97% 8%, rgb(12, 138, 217) 0px, transparent 50%) repeat scroll
-      0% 0%,
-    radial-gradient(at 79% 82%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
-      0% 0%,
-    radial-gradient(at 96% 10%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
-      0% 0%,
+    radial-gradient(at 97% 8%, rgb(12, 138, 217) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 79% 82%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 96% 10%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
     radial-gradient(at 42% 20%, rgb(255, 255, 255) 0px, transparent 50%) repeat
       scroll 0% 0%,
-    radial-gradient(at 4% 49%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
-      0% 0%,
-    rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(255, 255, 255) 0px, #ffffff 50%)
-      repeat scroll 0% 0%;
+    radial-gradient(at 4% 49%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    rgba(0, 0, 0, 0)
+      radial-gradient(at 57% 33%, rgb(255, 255, 255) 0px, #ffffff 50%) repeat
+      scroll 0% 0%;
   background: white !important;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(4px);
@@ -44,18 +48,22 @@
 .homebg {
   height: 100%;
   background: #000;
-  background: radial-gradient(at 18% 99%, rgb(121, 188, 226) 0px, transparent 50%)
+  background: radial-gradient(
+        at 18% 99%,
+        rgb(121, 188, 226) 0px,
+        transparent 50%
+      )
       repeat scroll 0% 0%,
-    radial-gradient(at 97% 8%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
-      0% 0%,
-    radial-gradient(at 79% 82%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
-      0% 0%,
+    radial-gradient(at 97% 8%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 79% 82%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
     radial-gradient(at 96% 10%, rgb(255, 255, 255) 0px, transparent 50%) repeat
       scroll 0% 0%,
     radial-gradient(at 42% 20%, rgb(255, 255, 255) 0px, transparent 50%) repeat
       scroll 0% 0%,
-    radial-gradient(at 4% 49%, rgb(255, 255, 255) 0px, transparent 50%) repeat scroll
-      0% 0%,
+    radial-gradient(at 4% 49%, rgb(255, 255, 255) 0px, transparent 50%) repeat
+      scroll 0% 0%,
     rgba(0, 0, 0, 0)
       radial-gradient(at 57% 33%, rgb(255, 255, 255) 0px, #ffffff 50%) repeat
       scroll 0% 0%;
@@ -63,91 +71,96 @@
   background-repeat: no-repeat;
 }
 
-
 /* Navbar */
-.navLinkBtn{
+.navLinkBtn {
   text-transform: capitalize !important;
 }
 .ant-dropdown {
   position: fixed !important;
   top: 75px !important;
 }
-@media (max-width:1000px) {
-  .ant-dropdown-menu, .ant-dropdown-menu-root, .ant-dropdown-menu-vertical, .ant-dropdown-menu-light, :where(.css-dev-only-do-not-override-1vtf12y).ant-dropdown .ant-dropdown-menu, :where(.css-dev-only-do-not-override-1vtf12y).ant-dropdown-menu-submenu .ant-dropdown-menu{
+@media (max-width: 1000px) {
+  .ant-dropdown-menu,
+  .ant-dropdown-menu-root,
+  .ant-dropdown-menu-vertical,
+  .ant-dropdown-menu-light,
+  :where(.css-dev-only-do-not-override-1vtf12y).ant-dropdown .ant-dropdown-menu,
+  :where(.css-dev-only-do-not-override-1vtf12y).ant-dropdown-menu-submenu
+    .ant-dropdown-menu {
     position: fixed !important;
     right: 10px;
     top: 60px;
   }
 }
 
-
 /* Home page */
-.headerBtn i{
+.headerBtn i {
   padding-left: 5px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.headerBtn:hover  i{
+.headerBtn:hover i {
   padding-left: 20px;
 }
 
-.shadowing{
+.shadowing {
   box-shadow: 0 0 15px #8080809f;
 }
 
-.showcase-image{
+.showcase-image {
   filter: drop-shadow(0 10px 5px #fff);
 }
 
-.homeServicesWrapper{
+.homeServicesWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
 
-.serviceCard{transition: all .3s;} .serviceCard:hover{
+.serviceCard {
+  transition: all 0.3s;
+}
+.serviceCard:hover {
   background: #008cff;
   color: white;
   box-shadow: 0 0 15px #888;
-  
-  animation: cardBounce .5s linear infinite alternate both;
+
+  animation: cardBounce 0.5s linear infinite alternate both;
 }
-.cardBounce{
-  animation: cardBounce .6s linear infinite alternate both;
+.cardBounce {
+  animation: cardBounce 0.6s linear infinite alternate both;
 }
 @keyframes cardBounce {
-  to{
+  to {
     transform: scale(1.03);
   }
 }
 @keyframes updown {
-  to{
+  to {
     transform: translateY(10px);
   }
 }
 
-
-.doctorsWrapper{
+.doctorsWrapper {
   display: grid;
   align-content: center;
   justify-content: center;
-  grid-template-columns: repeat(2,30%);
+  grid-template-columns: repeat(2, 30%);
   gap: 50px;
 }
 
-.diagnostics{
+.diagnostics {
   background: url("/artem.jpg") no-repeat fixed;
   background-position: right;
 }
-@media (min-width:1400px) {
-  .diagnostics{
+@media (min-width: 1400px) {
+  .diagnostics {
     background-size: cover;
     background-position: center;
   }
 }
 
-
 /* Services page */
-.services{
+.services {
   background: url("/services.jpg") no-repeat;
   background-position: center;
   background-position-y: bottom;
@@ -155,129 +168,134 @@
   width: 100%;
 }
 
-.ant-anchor-link{
+.ant-anchor-link {
   font-size: 20px !important;
 }
 
-.servicesScroll::-webkit-scrollbar-thumb,::-webkit-scrollbar{
+.servicesScroll::-webkit-scrollbar-thumb,
+::-webkit-scrollbar {
   display: none;
 }
 
-:where(.css-dev-only-do-not-override-1vtf12y).ant-col-18{
+:where(.css-dev-only-do-not-override-1vtf12y).ant-col-18 {
   max-width: unset;
 }
 
-@media (max-width:1000px) {
-  .servicesScroll{
+@media (max-width: 1000px) {
+  .servicesScroll {
     /* display: unset !important; */
     flex-direction: column-reverse !important;
     position: unset !important;
     /* flex-flow: column !important; */
   }
-  :where(.css-dev-only-do-not-override-1vtf12y).ant-col-5{
+  :where(.css-dev-only-do-not-override-1vtf12y).ant-col-5 {
     display: unset !important;
     max-width: unset !important;
     min-height: unset !important;
-    flex:unset;
+    flex: unset;
   }
   .css-dev-only-do-not-override-1vtf12y {
-    position:unset !important;
+    position: unset !important;
     height: unset !important;
     width: unset !important;
   }
 }
 
 /* Doctors */
-.doctors{
+.doctors {
   background: url("/doctors.jpg") no-repeat 500px / contain;
 }
-@media (max-width:1100px) {
-  .doctors{
+@media (max-width: 1100px) {
+  .doctors {
     background-position: center;
   }
 }
-@media (min-width:1500px) {
-  .doctors{
+@media (min-width: 1500px) {
+  .doctors {
     background-position: center;
   }
 }
 
 /* About */
-.about{
+.about {
   background: url("/about.webp") no-repeat center / cover;
 }
-.aboutUl li:nth-child(odd){
+.aboutUl li:nth-child(odd) {
   margin-bottom: 10px;
 }
-.aboutUl li:nth-child(even){
+.aboutUl li:nth-child(even) {
   margin-bottom: 10px;
 }
-.ant-tabs-tab-btn{
+.ant-tabs-tab-btn {
   font-size: 19px;
 }
 
 /* Contact */
-.contact{
+.contact {
   background: url("/contact.webp") no-repeat right / contain;
 }
-@media (max-width:440px) {
-  .contact{
+@media (max-width: 440px) {
+  .contact {
     background-size: cover;
   }
 }
-@media (max-width:1000px) {
-  .ant-input, .ant-input-number, .ant-input-number-input-wrap,
-  .ant-input-group-wrapper, .ant-input-wrapper, .ant-select{
+@media (max-width: 1000px) {
+  .ant-input,
+  .ant-input-number,
+  .ant-input-number-input-wrap,
+  .ant-input-group-wrapper,
+  .ant-input-wrapper,
+  .ant-select {
     width: 100% !important;
   }
 }
 
 /***************** Responsive *****************/
-@media (max-width:1200px) {
-  .showcaseHeader{
+@media (max-width: 1200px) {
+  .showcaseHeader {
     flex-direction: column-reverse;
     justify-content: center;
   }
-  .showcaseHeader section.showcaseText{
+  .showcaseHeader section.showcaseText {
     width: 100%;
   }
-  .showcaseImg{
+  .showcaseImg {
     display: none;
-  }
-
-}
-
-@media (max-width:1000px) {
-  .homeServicesWrapper{
-    grid-template-columns: repeat(2,1fr);
-  }
-  .doctorsWrapper{
-    grid-template-columns: repeat(2,1fr);
   }
 }
 
-@media (max-width:600px) {
-  .homeServicesWrapper{
-    grid-template-columns: repeat(1,1fr);
+@media (max-width: 1000px) {
+  .homeServicesWrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .doctorsWrapper{
-    grid-template-columns: repeat(1,1fr);
+  .doctorsWrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .doctorCard:nth-child(3), .doctorCard:nth-child(4){
+}
+
+@media (max-width: 600px) {
+  .homeServicesWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .doctorsWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .doctorCard:nth-child(3),
+  .doctorCard:nth-child(4) {
     display: none;
   }
-  .doctorsSeeMoreBtn{
+  .doctorsSeeMoreBtn {
     width: 100%;
   }
 
   /* Services */
-  .anchors{
+  .anchors {
     margin-top: 0;
   }
 }
 
-@media (max-width:400px) {
-  .page-title{
+@media (max-width: 400px) {
+  .page-title {
     font-size: 48px;
   }
 }
